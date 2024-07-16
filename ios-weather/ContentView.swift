@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            LinearGradient(gradient:/*@START_MENU_TOKEN@*/Gradient(colors: [Color.red, Color.blue])/*@END_MENU_TOKEN@*/,
+            LinearGradient(gradient:Gradient(colors: [Color("Primary"), Color("Secondary")]),
                            startPoint: .topLeading,
                            endPoint: .bottomTrailing)
             .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
@@ -28,7 +28,7 @@ struct ContentView: View {
                     Text("0°")
                         .font(.system(size: 92, weight: .semibold, design: .default))
                 }
-                Spacer()
+                
                 HStack(spacing: 14){
                     WeatherDayView(day: "1",
                                    image: "snow",
