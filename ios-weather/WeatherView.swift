@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct WeatherView: View {
 	@State private var status = "night"
 	
 	var body: some View {
@@ -23,7 +23,7 @@ struct ContentView: View {
 						.renderingMode(.original)
 						.resizable()
 						.aspectRatio(contentMode: .fit)
-						.frame(width: 170, height: 170, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+						.frame(width: 170, height: 170, alignment: .center)
 					Text("0°")
 						.font(.system(size: 92, weight: .semibold, design: .default))
 				}
@@ -67,7 +67,7 @@ struct ContentView: View {
 }
 
 #Preview {
-	ContentView()
+	WeatherView()
 }
 
 struct WeatherDayView: View {
