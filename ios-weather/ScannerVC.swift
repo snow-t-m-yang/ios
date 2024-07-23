@@ -8,8 +8,14 @@
 import AVFoundation
 import UIKit
 
+enum CameraError: String {
+	case invalidDeviceInput = "Something is wrong with the camera."
+	case invalidScannerValue = "The value is not valid."
+}
+
 protocol ScannerVCDelegate: AnyObject {
 	func didFind(barcode: String)
+	func didSurface(error: CameraError)
 }
 
 final class ScannerVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
@@ -31,6 +37,7 @@ final class ScannerVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate 
 	
 	private func setupCaptureSession() {
 		guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else {
+			scannerDelegate?.didSurface(error: .invalidDeviceInput)
 			return
 		}
 		
@@ -39,12 +46,14 @@ final class ScannerVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate 
 		do {
 			try videoInput = AVCaptureDeviceInput(device: videoCaptureDevice)
 		} catch {
+			scannerDelegate?.didSurface(error: .invalidDeviceInput)
 			return
 		}
 		
 		if captureSession.canAddInput(videoInput) {
 			captureSession.addInput(videoInput)
 		} else {
+			scannerDelegate?.didSurface(error: .invalidDeviceInput)
 			return
 		}
 		
@@ -55,6 +64,7 @@ final class ScannerVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate 
 			metaDataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
 			metaDataOutput.metadataObjectTypes = [.ean8, .ean13]
 		} else {
+			scannerDelegate?.didSurface(error: .invalidDeviceInput)
 			return
 		}
 		
@@ -73,10 +83,12 @@ extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
 		}
 		
 		guard let machineReadableObject = object as? AVMetadataMachineReadableCodeObject else {
+			scannerDelegate?.didSurface(error: .invalidScannerValue)
 			return
 		}
 		
 		guard let barcode = machineReadableObject.stringValue else {
+			scannerDelegate?.didSurface(error: .invalidScannerValue)
 			return
 		}
 		
