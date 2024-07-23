@@ -8,6 +8,8 @@
 import AVFoundation
 import UIKit
 
+// UIViewController
+
 enum CameraError: String {
 	case invalidDeviceInput = "Something is wrong with the camera."
 	case invalidScannerValue = "The value is not valid."
@@ -33,6 +35,22 @@ final class ScannerVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate 
 	@available(*, unavailable)
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
+	}
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		setupCaptureSession()
+	}
+	
+	override func viewDidLayoutSubviews() {
+		super.viewDidLayoutSubviews()
+		
+		guard let previewLayer = previewLayer else {
+			scannerDelegate?.didSurface(error: .invalidDeviceInput)
+			return
+		}
+		
+		previewLayer.frame = view.layer.bounds
 	}
 	
 	private func setupCaptureSession() {
@@ -76,7 +94,7 @@ final class ScannerVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate 
 	}
 }
 
-extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
+extension ScannerVC {
 	func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
 		guard let object = metadataObjects.first else {
 			return

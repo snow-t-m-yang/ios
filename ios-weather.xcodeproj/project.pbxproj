@@ -23,6 +23,7 @@
 		64861EA82C47ED8500774E57 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64861EA72C47ED8500774E57 /* WeatherView.swift */; };
 		64861EAA2C47EF5000774E57 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64861EA92C47EF5000774E57 /* Framework.swift */; };
 		64F7B2742C4F8AAB007C6F6B /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F7B2732C4F8AAB007C6F6B /* ScannerVC.swift */; };
+		64F7B2762C4F9771007C6F6B /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F7B2752C4F9771007C6F6B /* ScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		64861EA72C47ED8500774E57 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		64861EA92C47EF5000774E57 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		64F7B2732C4F8AAB007C6F6B /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		64F7B2752C4F9771007C6F6B /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 				64553E1C2C49018900EB5E0D /* Screens */,
 				64553E202C49023400EB5E0D /* Views */,
 				64F7B2732C4F8AAB007C6F6B /* ScannerVC.swift */,
+				64F7B2752C4F9771007C6F6B /* ScannerView.swift */,
 			);
 			path = "ios-weather";
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				64553E192C48F84A00EB5E0D /* SafariView.swift in Sources */,
 				64861EAA2C47EF5000774E57 /* Framework.swift in Sources */,
 				645680122C48010F001E74B2 /* AFButton.swift in Sources */,
+				64F7B2762C4F9771007C6F6B /* ScannerView.swift in Sources */,
 				64F7B2742C4F8AAB007C6F6B /* ScannerVC.swift in Sources */,
 				646C62762C455679009A0D3B /* root.swift in Sources */,
 			);
