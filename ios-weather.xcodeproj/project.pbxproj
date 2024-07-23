@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64553E172C48EEB700EB5E0D /* FrameworkGridViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64553E162C48EEB700EB5E0D /* FrameworkGridViewModal.swift */; };
+		64553E192C48F84A00EB5E0D /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64553E182C48F84A00EB5E0D /* SafariView.swift */; };
+		64553E1B2C48FE3300EB5E0D /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64553E1A2C48FE3300EB5E0D /* FrameworkTitleView.swift */; };
+		64553E262C493AD400EB5E0D /* BarcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64553E252C493AD400EB5E0D /* BarcodeView.swift */; };
 		645680102C47FEC1001E74B2 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456800F2C47FEC1001E74B2 /* FrameworkDetailView.swift */; };
 		645680122C48010F001E74B2 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645680112C48010F001E74B2 /* AFButton.swift */; };
-		646C62762C455679009A0D3B /* ios_weatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C62752C455679009A0D3B /* ios_weatherApp.swift */; };
+		646C62762C455679009A0D3B /* root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C62752C455679009A0D3B /* root.swift */; };
 		646C62782C455679009A0D3B /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C62772C455679009A0D3B /* FrameworkGridView.swift */; };
 		646C627A2C45567A009A0D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 646C62792C45567A009A0D3B /* Assets.xcassets */; };
 		646C627E2C45567A009A0D3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 646C627D2C45567A009A0D3B /* Preview Assets.xcassets */; };
@@ -38,10 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		64553E162C48EEB700EB5E0D /* FrameworkGridViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModal.swift; sourceTree = "<group>"; };
+		64553E182C48F84A00EB5E0D /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		64553E1A2C48FE3300EB5E0D /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
+		64553E252C493AD400EB5E0D /* BarcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeView.swift; sourceTree = "<group>"; };
 		6456800F2C47FEC1001E74B2 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		645680112C48010F001E74B2 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 		646C62722C455679009A0D3B /* ios-weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		646C62752C455679009A0D3B /* ios_weatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_weatherApp.swift; sourceTree = "<group>"; };
+		646C62752C455679009A0D3B /* root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = root.swift; sourceTree = "<group>"; };
 		646C62772C455679009A0D3B /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		646C62792C45567A009A0D3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		646C627B2C45567A009A0D3B /* ios_weather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ios_weather.entitlements; sourceTree = "<group>"; };
@@ -80,6 +88,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64553E1C2C49018900EB5E0D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				64553E242C493A6200EB5E0D /* BarcodeView */,
+				64553E1D2C4901A800EB5E0D /* FrameworkGriView */,
+				64553E1E2C4901C900EB5E0D /* FrameworkDetailView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		64553E1D2C4901A800EB5E0D /* FrameworkGriView */ = {
+			isa = PBXGroup;
+			children = (
+				646C62772C455679009A0D3B /* FrameworkGridView.swift */,
+				64553E162C48EEB700EB5E0D /* FrameworkGridViewModal.swift */,
+			);
+			path = FrameworkGriView;
+			sourceTree = "<group>";
+		};
+		64553E1E2C4901C900EB5E0D /* FrameworkDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				6456800F2C47FEC1001E74B2 /* FrameworkDetailView.swift */,
+			);
+			name = FrameworkDetailView;
+			sourceTree = "<group>";
+		};
+		64553E1F2C49021500EB5E0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				64861EA92C47EF5000774E57 /* Framework.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64553E202C49023400EB5E0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				64553E1A2C48FE3300EB5E0D /* FrameworkTitleView.swift */,
+				645680112C48010F001E74B2 /* AFButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		64553E222C49029400EB5E0D /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				64861EA72C47ED8500774E57 /* WeatherView.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		64553E232C4902B000EB5E0D /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				64553E182C48F84A00EB5E0D /* SafariView.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		64553E242C493A6200EB5E0D /* BarcodeView */ = {
+			isa = PBXGroup;
+			children = (
+				64553E252C493AD400EB5E0D /* BarcodeView.swift */,
+			);
+			path = BarcodeView;
+			sourceTree = "<group>";
+		};
 		646C62692C455679009A0D3B = {
 			isa = PBXGroup;
 			children = (
@@ -103,15 +179,15 @@
 		646C62742C455679009A0D3B /* ios-weather */ = {
 			isa = PBXGroup;
 			children = (
-				64861EA72C47ED8500774E57 /* WeatherView.swift */,
-				646C62752C455679009A0D3B /* ios_weatherApp.swift */,
-				646C62772C455679009A0D3B /* FrameworkGridView.swift */,
-				6456800F2C47FEC1001E74B2 /* FrameworkDetailView.swift */,
-				645680112C48010F001E74B2 /* AFButton.swift */,
-				64861EA92C47EF5000774E57 /* Framework.swift */,
+				64553E232C4902B000EB5E0D /* UIKit Components */,
+				64553E222C49029400EB5E0D /* Weather */,
 				646C62792C45567A009A0D3B /* Assets.xcassets */,
 				646C627B2C45567A009A0D3B /* ios_weather.entitlements */,
+				646C62752C455679009A0D3B /* root.swift */,
+				64553E1F2C49021500EB5E0D /* Model */,
 				646C627C2C45567A009A0D3B /* Preview Content */,
+				64553E1C2C49018900EB5E0D /* Screens */,
+				64553E202C49023400EB5E0D /* Views */,
 			);
 			path = "ios-weather";
 			sourceTree = "<group>";
@@ -272,11 +348,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				64861EA82C47ED8500774E57 /* WeatherView.swift in Sources */,
+				64553E262C493AD400EB5E0D /* BarcodeView.swift in Sources */,
+				64553E1B2C48FE3300EB5E0D /* FrameworkTitleView.swift in Sources */,
 				645680102C47FEC1001E74B2 /* FrameworkDetailView.swift in Sources */,
+				64553E172C48EEB700EB5E0D /* FrameworkGridViewModal.swift in Sources */,
 				646C62782C455679009A0D3B /* FrameworkGridView.swift in Sources */,
+				64553E192C48F84A00EB5E0D /* SafariView.swift in Sources */,
 				64861EAA2C47EF5000774E57 /* Framework.swift in Sources */,
 				645680122C48010F001E74B2 /* AFButton.swift in Sources */,
-				646C62762C455679009A0D3B /* ios_weatherApp.swift in Sources */,
+				646C62762C455679009A0D3B /* root.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

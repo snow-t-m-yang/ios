@@ -8,10 +8,11 @@
 import SwiftUI
 
 @main
-struct ios_weatherApp: App {
+struct root: App {
     var body: some Scene {
         WindowGroup {
-			FrameworkGridView()
+//			FrameworkGridView()
+			BarcodeView()
         }
     }
 }
