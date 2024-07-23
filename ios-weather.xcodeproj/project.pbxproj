@@ -22,6 +22,7 @@
 		646C62942C45567A009A0D3B /* ios_weatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C62932C45567A009A0D3B /* ios_weatherUITestsLaunchTests.swift */; };
 		64861EA82C47ED8500774E57 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64861EA72C47ED8500774E57 /* WeatherView.swift */; };
 		64861EAA2C47EF5000774E57 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64861EA92C47EF5000774E57 /* Framework.swift */; };
+		64F7B2742C4F8AAB007C6F6B /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F7B2732C4F8AAB007C6F6B /* ScannerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		646C62932C45567A009A0D3B /* ios_weatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_weatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		64861EA72C47ED8500774E57 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		64861EA92C47EF5000774E57 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
+		64F7B2732C4F8AAB007C6F6B /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				646C627C2C45567A009A0D3B /* Preview Content */,
 				64553E1C2C49018900EB5E0D /* Screens */,
 				64553E202C49023400EB5E0D /* Views */,
+				64F7B2732C4F8AAB007C6F6B /* ScannerVC.swift */,
 			);
 			path = "ios-weather";
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				64553E192C48F84A00EB5E0D /* SafariView.swift in Sources */,
 				64861EAA2C47EF5000774E57 /* Framework.swift in Sources */,
 				645680122C48010F001E74B2 /* AFButton.swift in Sources */,
+				64F7B2742C4F8AAB007C6F6B /* ScannerVC.swift in Sources */,
 				646C62762C455679009A0D3B /* root.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use the camera to use the scan bar";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -500,6 +505,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use the camera to use the scan bar";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
