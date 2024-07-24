@@ -28,6 +28,7 @@
 		64ED5A402C511C880036AC19 /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A3F2C511C880036AC19 /* AppetizerListView.swift */; };
 		64ED5A422C511C920036AC19 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A412C511C920036AC19 /* AccountView.swift */; };
 		64ED5A442C511C9A0036AC19 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A432C511C9A0036AC19 /* OrderView.swift */; };
+		64ED5A462C5123700036AC19 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A452C5123700036AC19 /* Appetizer.swift */; };
 		64F7B2742C4F8AAB007C6F6B /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F7B2732C4F8AAB007C6F6B /* ScannerVC.swift */; };
 		64F7B2762C4F9771007C6F6B /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F7B2752C4F9771007C6F6B /* ScannerView.swift */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,7 @@
 		64ED5A3F2C511C880036AC19 /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
 		64ED5A412C511C920036AC19 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		64ED5A432C511C9A0036AC19 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		64ED5A452C5123700036AC19 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 		64F7B2732C4F8AAB007C6F6B /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		64F7B2752C4F9771007C6F6B /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -245,6 +247,7 @@
 				64ED5A3F2C511C880036AC19 /* AppetizerListView.swift */,
 				64ED5A412C511C920036AC19 /* AccountView.swift */,
 				64ED5A432C511C9A0036AC19 /* OrderView.swift */,
+				64ED5A452C5123700036AC19 /* Appetizer.swift */,
 			);
 			path = Appetizer;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				64ED5A402C511C880036AC19 /* AppetizerListView.swift in Sources */,
 				64ED5A442C511C9A0036AC19 /* OrderView.swift in Sources */,
 				64F7B2742C4F8AAB007C6F6B /* ScannerVC.swift in Sources */,
+				64ED5A462C5123700036AC19 /* Appetizer.swift in Sources */,
 				646C62762C455679009A0D3B /* root.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
