@@ -10,9 +10,9 @@ import UIKit
 
 // UIViewController
 
-enum CameraError: String {
-	case invalidDeviceInput = "Something is wrong with the camera."
-	case invalidScannerValue = "The value is not valid."
+enum CameraError {
+	case invalidDeviceInput
+	case invalidScannerValue
 }
 
 protocol ScannerVCDelegate: AnyObject {

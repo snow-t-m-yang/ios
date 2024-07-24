@@ -22,6 +22,12 @@
 		646C62942C45567A009A0D3B /* ios_weatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C62932C45567A009A0D3B /* ios_weatherUITestsLaunchTests.swift */; };
 		64861EA82C47ED8500774E57 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64861EA72C47ED8500774E57 /* WeatherView.swift */; };
 		64861EAA2C47EF5000774E57 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64861EA92C47EF5000774E57 /* Framework.swift */; };
+		64ED5A382C5117240036AC19 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A372C5117240036AC19 /* Alert.swift */; };
+		64ED5A3A2C51175B0036AC19 /* BarcodeScannerViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A392C51175B0036AC19 /* BarcodeScannerViewModal.swift */; };
+		64ED5A3D2C511C0F0036AC19 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A3C2C511C0F0036AC19 /* AppetizerTabView.swift */; };
+		64ED5A402C511C880036AC19 /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A3F2C511C880036AC19 /* AppetizerListView.swift */; };
+		64ED5A422C511C920036AC19 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A412C511C920036AC19 /* AccountView.swift */; };
+		64ED5A442C511C9A0036AC19 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A432C511C9A0036AC19 /* OrderView.swift */; };
 		64F7B2742C4F8AAB007C6F6B /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F7B2732C4F8AAB007C6F6B /* ScannerVC.swift */; };
 		64F7B2762C4F9771007C6F6B /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F7B2752C4F9771007C6F6B /* ScannerView.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +69,12 @@
 		646C62932C45567A009A0D3B /* ios_weatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_weatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		64861EA72C47ED8500774E57 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		64861EA92C47EF5000774E57 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
+		64ED5A372C5117240036AC19 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		64ED5A392C51175B0036AC19 /* BarcodeScannerViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewModal.swift; sourceTree = "<group>"; };
+		64ED5A3C2C511C0F0036AC19 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
+		64ED5A3F2C511C880036AC19 /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
+		64ED5A412C511C920036AC19 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		64ED5A432C511C9A0036AC19 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		64F7B2732C4F8AAB007C6F6B /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		64F7B2752C4F9771007C6F6B /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +159,8 @@
 		64553E232C4902B000EB5E0D /* UIKit Components */ = {
 			isa = PBXGroup;
 			children = (
+				64F7B2732C4F8AAB007C6F6B /* ScannerVC.swift */,
+				64F7B2752C4F9771007C6F6B /* ScannerView.swift */,
 				64553E182C48F84A00EB5E0D /* SafariView.swift */,
 			);
 			path = "UIKit Components";
@@ -155,6 +169,8 @@
 		64553E242C493A6200EB5E0D /* BarcodeView */ = {
 			isa = PBXGroup;
 			children = (
+				64ED5A372C5117240036AC19 /* Alert.swift */,
+				64ED5A392C51175B0036AC19 /* BarcodeScannerViewModal.swift */,
 				64553E252C493AD400EB5E0D /* BarcodeView.swift */,
 			);
 			path = BarcodeView;
@@ -183,6 +199,7 @@
 		646C62742C455679009A0D3B /* ios-weather */ = {
 			isa = PBXGroup;
 			children = (
+				64ED5A3E2C511C3E0036AC19 /* Appetizer */,
 				64553E232C4902B000EB5E0D /* UIKit Components */,
 				64553E222C49029400EB5E0D /* Weather */,
 				646C62792C45567A009A0D3B /* Assets.xcassets */,
@@ -192,8 +209,6 @@
 				646C627C2C45567A009A0D3B /* Preview Content */,
 				64553E1C2C49018900EB5E0D /* Screens */,
 				64553E202C49023400EB5E0D /* Views */,
-				64F7B2732C4F8AAB007C6F6B /* ScannerVC.swift */,
-				64F7B2752C4F9771007C6F6B /* ScannerView.swift */,
 			);
 			path = "ios-weather";
 			sourceTree = "<group>";
@@ -221,6 +236,17 @@
 				646C62932C45567A009A0D3B /* ios_weatherUITestsLaunchTests.swift */,
 			);
 			path = "ios-weatherUITests";
+			sourceTree = "<group>";
+		};
+		64ED5A3E2C511C3E0036AC19 /* Appetizer */ = {
+			isa = PBXGroup;
+			children = (
+				64ED5A3C2C511C0F0036AC19 /* AppetizerTabView.swift */,
+				64ED5A3F2C511C880036AC19 /* AppetizerListView.swift */,
+				64ED5A412C511C920036AC19 /* AccountView.swift */,
+				64ED5A432C511C9A0036AC19 /* OrderView.swift */,
+			);
+			path = Appetizer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,14 +381,20 @@
 			files = (
 				64861EA82C47ED8500774E57 /* WeatherView.swift in Sources */,
 				64553E262C493AD400EB5E0D /* BarcodeView.swift in Sources */,
+				64ED5A3A2C51175B0036AC19 /* BarcodeScannerViewModal.swift in Sources */,
+				64ED5A422C511C920036AC19 /* AccountView.swift in Sources */,
 				64553E1B2C48FE3300EB5E0D /* FrameworkTitleView.swift in Sources */,
 				645680102C47FEC1001E74B2 /* FrameworkDetailView.swift in Sources */,
 				64553E172C48EEB700EB5E0D /* FrameworkGridViewModal.swift in Sources */,
+				64ED5A382C5117240036AC19 /* Alert.swift in Sources */,
 				646C62782C455679009A0D3B /* FrameworkGridView.swift in Sources */,
 				64553E192C48F84A00EB5E0D /* SafariView.swift in Sources */,
+				64ED5A3D2C511C0F0036AC19 /* AppetizerTabView.swift in Sources */,
 				64861EAA2C47EF5000774E57 /* Framework.swift in Sources */,
 				645680122C48010F001E74B2 /* AFButton.swift in Sources */,
 				64F7B2762C4F9771007C6F6B /* ScannerView.swift in Sources */,
+				64ED5A402C511C880036AC19 /* AppetizerListView.swift in Sources */,
+				64ED5A442C511C9A0036AC19 /* OrderView.swift in Sources */,
 				64F7B2742C4F8AAB007C6F6B /* ScannerVC.swift in Sources */,
 				646C62762C455679009A0D3B /* root.swift in Sources */,
 			);

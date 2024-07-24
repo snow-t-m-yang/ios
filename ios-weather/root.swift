@@ -12,7 +12,8 @@ struct root: App {
     var body: some Scene {
         WindowGroup {
 //			FrameworkGridView()
-			BarcodeView()
+//			BarcodeView()
+			AppetizerTabView()
         }
     }
 }
