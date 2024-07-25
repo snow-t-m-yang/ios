@@ -31,6 +31,8 @@
 		64ED5A462C5123700036AC19 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A452C5123700036AC19 /* Appetizer.swift */; };
 		64ED5A482C512CFB0036AC19 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A472C512CFA0036AC19 /* NetworkManager.swift */; };
 		64ED5A4A2C512DD30036AC19 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A492C512DD30036AC19 /* APError.swift */; };
+		64EEBF8C2C52627100A6CF2E /* AppetizerListViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEBF8B2C52627100A6CF2E /* AppetizerListViewModal.swift */; };
+		64EEBF8E2C52640B00A6CF2E /* APPAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEBF8D2C52640B00A6CF2E /* APPAlert.swift */; };
 		64F7B2742C4F8AAB007C6F6B /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F7B2732C4F8AAB007C6F6B /* ScannerVC.swift */; };
 		64F7B2762C4F9771007C6F6B /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F7B2752C4F9771007C6F6B /* ScannerView.swift */; };
 /* End PBXBuildFile section */
@@ -81,6 +83,8 @@
 		64ED5A452C5123700036AC19 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 		64ED5A472C512CFA0036AC19 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		64ED5A492C512DD30036AC19 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
+		64EEBF8B2C52627100A6CF2E /* AppetizerListViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModal.swift; sourceTree = "<group>"; };
+		64EEBF8D2C52640B00A6CF2E /* APPAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPAlert.swift; sourceTree = "<group>"; };
 		64F7B2732C4F8AAB007C6F6B /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		64F7B2752C4F9771007C6F6B /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -254,6 +258,8 @@
 				64ED5A452C5123700036AC19 /* Appetizer.swift */,
 				64ED5A472C512CFA0036AC19 /* NetworkManager.swift */,
 				64ED5A492C512DD30036AC19 /* APError.swift */,
+				64EEBF8B2C52627100A6CF2E /* AppetizerListViewModal.swift */,
+				64EEBF8D2C52640B00A6CF2E /* APPAlert.swift */,
 			);
 			path = Appetizer;
 			sourceTree = "<group>";
@@ -389,7 +395,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				64861EA82C47ED8500774E57 /* WeatherView.swift in Sources */,
+				64EEBF8C2C52627100A6CF2E /* AppetizerListViewModal.swift in Sources */,
 				64553E262C493AD400EB5E0D /* BarcodeView.swift in Sources */,
+				64EEBF8E2C52640B00A6CF2E /* APPAlert.swift in Sources */,
 				64ED5A3A2C51175B0036AC19 /* BarcodeScannerViewModal.swift in Sources */,
 				64ED5A422C511C920036AC19 /* AccountView.swift in Sources */,
 				64ED5A4A2C512DD30036AC19 /* APError.swift in Sources */,
