@@ -15,19 +15,59 @@ struct APPAlertItem: Identifiable {
 }
 
 enum APPAlertContext {
-	static let invalidURL = APPAlertItem(title: Text("Server Error"),
-	                                     message: Text("Wrong URL"),
-	                                     dismissButton: .default(Text("OK")))
+	static let invalidURL = APPAlertItem(
+		title: Text(
+			"Server Error"
+		),
+		message: Text(
+			"Wrong URL"
+		),
+		dismissButton: .default(
+			Text(
+				"OK"
+			)
+		)
+	)
 
-	static let invalidResponse = AlertItem(title: Text("Server Error"),
-	                                       message: Text("The value is not valid."),
-	                                       dismissButton: .default(Text("OK")))
+	static let invalidResponse = APPAlertItem(
+		title: Text(
+			"Server Error"
+		),
+		message: Text(
+			"Invlid response from the server"
+		),
+		dismissButton: .default(
+			Text(
+				"OK"
+			)
+		)
+	)
 
-	static let invalidData = AlertItem(title: Text("Invalid scanned type"),
-	                                   message: Text("The value is not valid."),
-	                                   dismissButton: .default(Text("OK")))
+	static let invalidData = APPAlertItem(
+		title: Text(
+			"Server Error"
+		),
+		message: Text(
+			"Errro with server"
+		),
+		dismissButton: .default(
+			Text(
+				"OK"
+			)
+		)
+	)
 
-	static let unableToComplete = AlertItem(title: Text("Invalid scanned type"),
-	                                        message: Text("The value is not valid."),
-	                                        dismissButton: .default(Text("OK")))
+	static let unableToComplete = APPAlertItem(
+		title: Text(
+			"Server Error"
+		),
+		message: Text(
+			"Error occurs, can't complete."
+		),
+		dismissButton: .default(
+			Text(
+				"OK"
+			)
+		)
+	)
 }

@@ -20,6 +20,13 @@ struct AppetizerListView: View {
 		.onAppear {
 			viewModal.getAppetizers()
 		}
+		.alert(item: $viewModal.appAlertItem) { appAlertItem in
+			Alert(
+				title: appAlertItem.title,
+				message: appAlertItem.message,
+				dismissButton: appAlertItem.dismissButton
+			)
+		}
 	}
 }
 
