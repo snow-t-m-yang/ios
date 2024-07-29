@@ -22,6 +22,8 @@
 		646C62942C45567A009A0D3B /* ios_weatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C62932C45567A009A0D3B /* ios_weatherUITestsLaunchTests.swift */; };
 		64861EA82C47ED8500774E57 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64861EA72C47ED8500774E57 /* WeatherView.swift */; };
 		64861EAA2C47EF5000774E57 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64861EA92C47EF5000774E57 /* Framework.swift */; };
+		64AD85D12C5787B500BA0629 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AD85D02C5787B500BA0629 /* LoadingView.swift */; };
+		64AD85D32C5788B000BA0629 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AD85D22C5788B000BA0629 /* Color+Ext.swift */; };
 		64ED5A382C5117240036AC19 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A372C5117240036AC19 /* Alert.swift */; };
 		64ED5A3A2C51175B0036AC19 /* BarcodeScannerViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A392C51175B0036AC19 /* BarcodeScannerViewModal.swift */; };
 		64ED5A3D2C511C0F0036AC19 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A3C2C511C0F0036AC19 /* AppetizerTabView.swift */; };
@@ -74,6 +76,8 @@
 		646C62932C45567A009A0D3B /* ios_weatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_weatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		64861EA72C47ED8500774E57 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		64861EA92C47EF5000774E57 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
+		64AD85D02C5787B500BA0629 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		64AD85D22C5788B000BA0629 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		64ED5A372C5117240036AC19 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		64ED5A392C51175B0036AC19 /* BarcodeScannerViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewModal.swift; sourceTree = "<group>"; };
 		64ED5A3C2C511C0F0036AC19 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -260,6 +264,8 @@
 				64ED5A492C512DD30036AC19 /* APError.swift */,
 				64EEBF8B2C52627100A6CF2E /* AppetizerListViewModal.swift */,
 				64EEBF8D2C52640B00A6CF2E /* APPAlert.swift */,
+				64AD85D02C5787B500BA0629 /* LoadingView.swift */,
+				64AD85D22C5788B000BA0629 /* Color+Ext.swift */,
 			);
 			path = Appetizer;
 			sourceTree = "<group>";
@@ -399,6 +405,7 @@
 				64553E262C493AD400EB5E0D /* BarcodeView.swift in Sources */,
 				64EEBF8E2C52640B00A6CF2E /* APPAlert.swift in Sources */,
 				64ED5A3A2C51175B0036AC19 /* BarcodeScannerViewModal.swift in Sources */,
+				64AD85D12C5787B500BA0629 /* LoadingView.swift in Sources */,
 				64ED5A422C511C920036AC19 /* AccountView.swift in Sources */,
 				64ED5A4A2C512DD30036AC19 /* APError.swift in Sources */,
 				64553E1B2C48FE3300EB5E0D /* FrameworkTitleView.swift in Sources */,
@@ -407,6 +414,7 @@
 				64ED5A382C5117240036AC19 /* Alert.swift in Sources */,
 				646C62782C455679009A0D3B /* FrameworkGridView.swift in Sources */,
 				64553E192C48F84A00EB5E0D /* SafariView.swift in Sources */,
+				64AD85D32C5788B000BA0629 /* Color+Ext.swift in Sources */,
 				64ED5A3D2C511C0F0036AC19 /* AppetizerTabView.swift in Sources */,
 				64861EAA2C47EF5000774E57 /* Framework.swift in Sources */,
 				64ED5A482C512CFB0036AC19 /* NetworkManager.swift in Sources */,

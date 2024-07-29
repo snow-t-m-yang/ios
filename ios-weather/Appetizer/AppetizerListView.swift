@@ -11,16 +11,22 @@ struct AppetizerListView: View {
 	@StateObject var viewModal = AppetizerListViewModal()
 
 	var body: some View {
-		NavigationView {
-			List(viewModal.appetizers) { app in
-				AppetizerListCell(app: app)
+		ZStack {
+			NavigationView {
+				List(viewModal.appetizers) { app in
+					AppetizerListCell(app: app)
+				}
+				.navigationTitle("🍣 Appetizers")
 			}
-			.navigationTitle("🍣 Appetizers")
-		}
-		.onAppear {
-			viewModal.getAppetizers()
-		}
-		.alert(item: $viewModal.appAlertItem) { appAlertItem in
+			.onAppear {
+				viewModal.getAppetizers()
+			}
+			
+			if viewModal.isLoading {
+				LoadingView()
+			}
+
+		}.alert(item: $viewModal.appAlertItem) { appAlertItem in
 			Alert(
 				title: appAlertItem.title,
 				message: appAlertItem.message,
