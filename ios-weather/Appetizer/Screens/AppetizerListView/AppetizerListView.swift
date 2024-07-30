@@ -21,7 +21,7 @@ struct AppetizerListView: View {
 			.onAppear {
 				viewModal.getAppetizers()
 			}
-			
+
 			if viewModal.isLoading {
 				LoadingView()
 			}
@@ -45,8 +45,7 @@ struct AppetizerListCell: View {
 
 	var body: some View {
 		HStack {
-			Image("sf-symbols")
-				.resizable()
+			AppetizerRemoteImage(urlString: app.imageURL)
 				.aspectRatio(contentMode: .fit)
 				.frame(width: 120, height: 90)
 				.cornerRadius(9)
