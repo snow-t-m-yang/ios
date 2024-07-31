@@ -28,6 +28,7 @@
 		64AD85E22C59136C00BA0629 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AD85E12C59136C00BA0629 /* AppetizerDetailView.swift */; };
 		64AD85E42C5A6D3600BA0629 /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AD85E32C5A6D3600BA0629 /* DismissButton.swift */; };
 		64AD85E62C5A752700BA0629 /* AccountViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AD85E52C5A752700BA0629 /* AccountViewModal.swift */; };
+		64AD85E82C5A76A600BA0629 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AD85E72C5A76A600BA0629 /* String+Ext.swift */; };
 		64ED5A382C5117240036AC19 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A372C5117240036AC19 /* Alert.swift */; };
 		64ED5A3A2C51175B0036AC19 /* BarcodeScannerViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A392C51175B0036AC19 /* BarcodeScannerViewModal.swift */; };
 		64ED5A3D2C511C0F0036AC19 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ED5A3C2C511C0F0036AC19 /* AppetizerTabView.swift */; };
@@ -86,6 +87,7 @@
 		64AD85E12C59136C00BA0629 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 		64AD85E32C5A6D3600BA0629 /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
 		64AD85E52C5A752700BA0629 /* AccountViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModal.swift; sourceTree = "<group>"; };
+		64AD85E72C5A76A600BA0629 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		64ED5A372C5117240036AC19 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		64ED5A392C51175B0036AC19 /* BarcodeScannerViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewModal.swift; sourceTree = "<group>"; };
 		64ED5A3C2C511C0F0036AC19 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 			children = (
 				64ED5A412C511C920036AC19 /* AccountView.swift */,
 				64AD85E52C5A752700BA0629 /* AccountViewModal.swift */,
+				64AD85E72C5A76A600BA0629 /* String+Ext.swift */,
 			);
 			path = AccountView;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				64553E192C48F84A00EB5E0D /* SafariView.swift in Sources */,
 				64AD85D32C5788B000BA0629 /* Color+Ext.swift in Sources */,
 				64ED5A3D2C511C0F0036AC19 /* AppetizerTabView.swift in Sources */,
+				64AD85E82C5A76A600BA0629 /* String+Ext.swift in Sources */,
 				64861EAA2C47EF5000774E57 /* Framework.swift in Sources */,
 				64ED5A482C512CFB0036AC19 /* NetworkManager.swift in Sources */,
 				645680122C48010F001E74B2 /* AFButton.swift in Sources */,
