@@ -15,15 +15,25 @@ final class AccountViewModal: ObservableObject {
 	@Published var extraNapkins = false
 	@Published var frequentRefills = false
 
+	@Published var alertItem: APPAlertItem?
+
 	var isValidForm: Bool {
 		guard !firstName.isEmpty && !lastName.isEmpty && !email.isEmpty else {
+			alertItem = APPAlertContext.invalidForm
 			return false
 		}
 
 		guard email.isValidEmail else {
+			alertItem = APPAlertContext.invalidEmail
 			return false
 		}
 
-			return true
+		return true
+	}
+
+	func saveChanges() {
+		guard isValidForm else { return }
+
+		print("saved")
 	}
 }

@@ -15,6 +15,7 @@ struct APPAlertItem: Identifiable {
 }
 
 enum APPAlertContext {
+	//MARK - network alerts
 	static let invalidURL = APPAlertItem(
 		title: Text(
 			"Server Error"
@@ -63,6 +64,33 @@ enum APPAlertContext {
 		),
 		message: Text(
 			"Error occurs, can't complete."
+		),
+		dismissButton: .default(
+			Text(
+				"OK"
+			)
+		)
+	)
+	//MARK - account alert
+	static let invalidForm = APPAlertItem(
+		title: Text(
+			"Invalid Form"
+		),
+		message: Text(
+			"Please fill out all fields!"
+		),
+		dismissButton: .default(
+			Text(
+				"OK"
+			)
+		)
+	)
+	static let invalidEmail = APPAlertItem(
+		title: Text(
+			"Invalid Email"
+		),
+		message: Text(
+			"Please double check your email!"
 		),
 		dismissButton: .default(
 			Text(

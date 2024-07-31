@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AccountView: View {
 	@StateObject var viewModal = AccountViewModal()
-	
+
 	var body: some View {
 		NavigationView {
 			Form {
@@ -20,16 +20,16 @@ struct AccountView: View {
 						.keyboardType(.emailAddress)
 						.autocapitalization(.none)
 						.autocorrectionDisabled(true)
-				
+
 					DatePicker("Birthday", selection: $viewModal.birthdate, displayedComponents: .date)
-					
+
 					Button {
-						print("ok")
+						viewModal.saveChanges()
 					} label: {
 						Text("Save Changes")
 					}
 				}
-				
+
 				Section(header: Text("Requests")) {
 					Toggle("Extra Napkins", isOn: $viewModal.extraNapkins)
 					Toggle("Frequent Refills", isOn: $viewModal.frequentRefills)
@@ -37,6 +37,13 @@ struct AccountView: View {
 				.toggleStyle(SwitchToggleStyle(tint: .brandPrimary))
 			}
 			.navigationTitle("Account")
+		}
+		.alert(item: $viewModal.alertItem) { aletItem in
+			Alert(
+				title: aletItem.title,
+				message: aletItem.message,
+				dismissButton: aletItem.dismissButton
+			)
 		}
 	}
 }
