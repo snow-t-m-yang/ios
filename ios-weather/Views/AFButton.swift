@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AFButton: View {
-	var title: String
+	var title: LocalizedStringKey
 
 	var body: some View {
 		Text(title)
