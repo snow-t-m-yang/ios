@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AppetizerTabView: View {
 	var body: some View {
-		TabView(){
+		TabView {
 			AppetizerListView()
 				.tabItem {
 					Image(systemName: "house")
@@ -23,10 +23,9 @@ struct AppetizerTabView: View {
 					Image(systemName: "bag")
 				}
 		}
-		.accentColor(Color(.brandPrimary))
 	}
 }
 
-#Preview {
+ #Preview {
 	AppetizerTabView()
-}
+ }

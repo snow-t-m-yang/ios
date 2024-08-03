@@ -21,6 +21,7 @@ struct AppetizerListView: View {
 						}
 				}
 				.navigationTitle("🍣 Appetizers")
+				.listStyle(.inset)
 				.disabled(viewModal.isShowingDetail)
 			}
 			.onAppear {

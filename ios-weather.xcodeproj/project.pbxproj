@@ -209,7 +209,6 @@
 		646C62692C455679009A0D3B = {
 			isa = PBXGroup;
 			children = (
-				64708B9D2C5E454900A054A4 /* Order.swift */,
 				646C62742C455679009A0D3B /* ios-weather */,
 				646C62862C45567A009A0D3B /* ios-weatherTests */,
 				646C62902C45567A009A0D3B /* ios-weatherUITests */,
@@ -345,6 +344,7 @@
 		64AD85DE2C590DD000BA0629 /* Modals */ = {
 			isa = PBXGroup;
 			children = (
+				64708B9D2C5E454900A054A4 /* Order.swift */,
 				64ED5A452C5123700036AC19 /* Appetizer.swift */,
 				64641D1A2C5CCE58008A5F5C /* User.swift */,
 			);
