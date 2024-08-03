@@ -22,7 +22,7 @@ struct AppetizerResponse: Decodable {
 	let request: [Appetizer]
 }
 
-struct AMockData {
+enum AMockData {
 	static let sampleAppetizer = Appetizer(
 		id: 0001,
 		name: "test",
@@ -35,4 +35,37 @@ struct AMockData {
 	)
 
 	static let appetizers = [sampleAppetizer, sampleAppetizer, sampleAppetizer, sampleAppetizer]
+
+	static let orderItemOne = Appetizer(
+		id: 0001,
+		name: "test 1",
+		description: "tesing",
+		price: 777,
+		imageURL: "",
+		calories: 10,
+		protein: 35,
+		carbs: 0
+	)
+	static let orderItemTwo = Appetizer(
+		id: 0002,
+		name: "test 2",
+		description: "tesing",
+		price: 777,
+		imageURL: "",
+		calories: 10,
+		protein: 35,
+		carbs: 0
+	)
+	static let orderItemThree = Appetizer(
+		id: 0003,
+		name: "test 3",
+		description: "tesing",
+		price: 777,
+		imageURL: "",
+		calories: 10,
+		protein: 35,
+		carbs: 0
+	)
+	
+	static let orderItems = [orderItemOne, orderItemTwo, orderItemThree]
 }

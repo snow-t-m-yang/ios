@@ -13,6 +13,7 @@
 		64553E262C493AD400EB5E0D /* BarcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64553E252C493AD400EB5E0D /* BarcodeView.swift */; };
 		645680102C47FEC1001E74B2 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456800F2C47FEC1001E74B2 /* FrameworkDetailView.swift */; };
 		645680122C48010F001E74B2 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645680112C48010F001E74B2 /* AFButton.swift */; };
+		64641D1B2C5CCE58008A5F5C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64641D1A2C5CCE58008A5F5C /* User.swift */; };
 		646C62762C455679009A0D3B /* root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C62752C455679009A0D3B /* root.swift */; };
 		646C62782C455679009A0D3B /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C62772C455679009A0D3B /* FrameworkGridView.swift */; };
 		646C627A2C45567A009A0D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 646C62792C45567A009A0D3B /* Assets.xcassets */; };
@@ -20,6 +21,8 @@
 		646C62882C45567A009A0D3B /* ios_weatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C62872C45567A009A0D3B /* ios_weatherTests.swift */; };
 		646C62922C45567A009A0D3B /* ios_weatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C62912C45567A009A0D3B /* ios_weatherUITests.swift */; };
 		646C62942C45567A009A0D3B /* ios_weatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C62932C45567A009A0D3B /* ios_weatherUITestsLaunchTests.swift */; };
+		64708B9C2C5E420000A054A4 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64708B9B2C5E420000A054A4 /* EmptyState.swift */; };
+		64708B9E2C5E454900A054A4 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64708B9D2C5E454900A054A4 /* Order.swift */; };
 		64861EA82C47ED8500774E57 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64861EA72C47ED8500774E57 /* WeatherView.swift */; };
 		64861EAA2C47EF5000774E57 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64861EA92C47EF5000774E57 /* Framework.swift */; };
 		64AD85D12C5787B500BA0629 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AD85D02C5787B500BA0629 /* LoadingView.swift */; };
@@ -68,6 +71,7 @@
 		64553E252C493AD400EB5E0D /* BarcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeView.swift; sourceTree = "<group>"; };
 		6456800F2C47FEC1001E74B2 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		645680112C48010F001E74B2 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
+		64641D1A2C5CCE58008A5F5C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		646C62722C455679009A0D3B /* ios-weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		646C62752C455679009A0D3B /* root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = root.swift; sourceTree = "<group>"; };
 		646C62772C455679009A0D3B /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 		646C628D2C45567A009A0D3B /* ios-weatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-weatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		646C62912C45567A009A0D3B /* ios_weatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_weatherUITests.swift; sourceTree = "<group>"; };
 		646C62932C45567A009A0D3B /* ios_weatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_weatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		64708B9B2C5E420000A054A4 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		64708B9D2C5E454900A054A4 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		64861EA72C47ED8500774E57 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		64861EA92C47EF5000774E57 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		64AD85D02C5787B500BA0629 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -203,6 +209,7 @@
 		646C62692C455679009A0D3B = {
 			isa = PBXGroup;
 			children = (
+				64708B9D2C5E454900A054A4 /* Order.swift */,
 				646C62742C455679009A0D3B /* ios-weather */,
 				646C62862C45567A009A0D3B /* ios-weatherTests */,
 				646C62902C45567A009A0D3B /* ios-weatherUITests */,
@@ -339,6 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				64ED5A452C5123700036AC19 /* Appetizer.swift */,
+				64641D1A2C5CCE58008A5F5C /* User.swift */,
 			);
 			path = Modals;
 			sourceTree = "<group>";
@@ -358,6 +366,7 @@
 				64AD85D42C57B06100BA0629 /* RemoteImage.swift */,
 				64AD85DF2C590DE300BA0629 /* UIKit */,
 				64AD85E32C5A6D3600BA0629 /* DismissButton.swift */,
+				64708B9B2C5E420000A054A4 /* EmptyState.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -507,6 +516,7 @@
 				64EEBF8C2C52627100A6CF2E /* AppetizerListViewModal.swift in Sources */,
 				64553E262C493AD400EB5E0D /* BarcodeView.swift in Sources */,
 				64EEBF8E2C52640B00A6CF2E /* APPAlert.swift in Sources */,
+				64641D1B2C5CCE58008A5F5C /* User.swift in Sources */,
 				64ED5A3A2C51175B0036AC19 /* BarcodeScannerViewModal.swift in Sources */,
 				64AD85D12C5787B500BA0629 /* LoadingView.swift in Sources */,
 				64ED5A422C511C920036AC19 /* AccountView.swift in Sources */,
@@ -517,6 +527,7 @@
 				64ED5A382C5117240036AC19 /* Alert.swift in Sources */,
 				646C62782C455679009A0D3B /* FrameworkGridView.swift in Sources */,
 				64AD85E22C59136C00BA0629 /* AppetizerDetailView.swift in Sources */,
+				64708B9E2C5E454900A054A4 /* Order.swift in Sources */,
 				64AD85E42C5A6D3600BA0629 /* DismissButton.swift in Sources */,
 				64553E192C48F84A00EB5E0D /* SafariView.swift in Sources */,
 				64AD85D32C5788B000BA0629 /* Color+Ext.swift in Sources */,
@@ -529,6 +540,7 @@
 				64F7B2762C4F9771007C6F6B /* ScannerView.swift in Sources */,
 				64ED5A402C511C880036AC19 /* AppetizerListView.swift in Sources */,
 				64AD85E62C5A752700BA0629 /* AccountViewModal.swift in Sources */,
+				64708B9C2C5E420000A054A4 /* EmptyState.swift in Sources */,
 				64ED5A442C511C9A0036AC19 /* OrderView.swift in Sources */,
 				64F7B2742C4F8AAB007C6F6B /* ScannerVC.swift in Sources */,
 				64ED5A462C5123700036AC19 /* Appetizer.swift in Sources */,

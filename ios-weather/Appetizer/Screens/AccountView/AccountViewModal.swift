@@ -8,32 +8,45 @@
 import SwiftUI
 
 final class AccountViewModal: ObservableObject {
-	@Published var firstName = ""
-	@Published var lastName = ""
-	@Published var email = ""
-	@Published var birthdate = Date()
-	@Published var extraNapkins = false
-	@Published var frequentRefills = false
-
+	@AppStorage("user") private var userData: Data?
+	@Published var user = User()
 	@Published var alertItem: APPAlertItem?
 
+	func saveChanges() {
+		guard isValidForm else { return }
+
+		do {
+			let data = try JSONEncoder().encode(user)
+			userData = data
+			debugPrint(userData!)
+			alertItem = APPAlertContext.userSaveSuccess
+		} catch {
+			alertItem = APPAlertContext.invalidUserData
+		}
+	}
+
+	func retriveUser() {
+		guard let userData = userData else {return}
+		
+		do {
+			user = try JSONDecoder().decode(User.self, from: userData)
+			debugPrint(user)
+		} catch {
+			alertItem = APPAlertContext.invalidUserData
+		}
+	}
+
 	var isValidForm: Bool {
-		guard !firstName.isEmpty && !lastName.isEmpty && !email.isEmpty else {
+		guard !user.firstName.isEmpty && !user.lastName.isEmpty && !user.email.isEmpty else {
 			alertItem = APPAlertContext.invalidForm
 			return false
 		}
 
-		guard email.isValidEmail else {
+		guard user.email.isValidEmail else {
 			alertItem = APPAlertContext.invalidEmail
 			return false
 		}
 
 		return true
-	}
-
-	func saveChanges() {
-		guard isValidForm else { return }
-
-		print("saved")
 	}
 }
