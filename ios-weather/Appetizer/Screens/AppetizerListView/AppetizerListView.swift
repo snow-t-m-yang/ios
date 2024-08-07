@@ -9,12 +9,13 @@ import SwiftUI
 
 struct AppetizerListView: View {
 	@StateObject var viewModal = AppetizerListViewModal()
-	
+
 	var body: some View {
 		ZStack {
 			NavigationView {
 				List(viewModal.appetizers) { app in
 					AppetizerListCell(app: app)
+
 						.onTapGesture {
 							viewModal.selectedAppetizer = app
 							viewModal.isShowingDetail = true
@@ -24,7 +25,7 @@ struct AppetizerListView: View {
 				.listStyle(.inset)
 				.disabled(viewModal.isShowingDetail)
 			}
-			.onAppear {
+			.task {
 				viewModal.getAppetizers()
 			}
 			.blur(radius: viewModal.isShowingDetail ? 20 : 0)
@@ -59,10 +60,25 @@ struct AppetizerListCell: View {
 
 	var body: some View {
 		HStack {
-			AppetizerRemoteImage(urlString: app.imageURL)
-				.aspectRatio(contentMode: .fit)
-				.frame(width: 120, height: 90)
-				.cornerRadius(9)
+//			AppetizerRemoteImage(urlString: app.imageURL)
+//				.aspectRatio(contentMode: .fit)
+//				.frame(width: 120, height: 90)
+//				.cornerRadius(9)
+
+			AsyncImage(url: URL(string: app.imageURL)) { image in
+				image
+					.resizable()
+					.aspectRatio(contentMode: .fit)
+					.frame(width: 120, height: 90)
+					.cornerRadius(9)
+
+			} placeholder: {
+				Image("food-placeholder")
+					.resizable()
+					.aspectRatio(contentMode: .fit)
+					.frame(width: 120, height: 90)
+					.cornerRadius(9)
+			}
 
 			VStack(alignment: .leading, spacing: 5) {
 				Text(app.name)

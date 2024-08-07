@@ -10,16 +10,39 @@ import SwiftUI
 struct AccountView: View {
 	@StateObject var viewModal = AccountViewModal()
 
+	@FocusState private var focusedField: FormField?
+
+	enum FormField {
+		case firstName, lastName, email
+	}
+
 	var body: some View {
 		NavigationView {
 			Form {
 				Section(header: Text("Personal Info")) {
 					TextField("First Name", text: $viewModal.user.firstName)
+						.focused($focusedField, equals: .firstName)
+						.onSubmit {
+							focusedField = .lastName
+						}
+						.submitLabel(.next)
+					
 					TextField("Last Name", text: $viewModal.user.lastName)
+						.focused($focusedField, equals: .lastName)
+						.onSubmit {
+							focusedField = .email
+						}
+						.submitLabel(.next)
+
 					TextField("Email", text: $viewModal.user.email)
+						.focused($focusedField, equals: .email)
 						.keyboardType(.emailAddress)
 						.autocapitalization(.none)
 						.autocorrectionDisabled(true)
+						.onSubmit {
+							focusedField = nil
+						}
+						.submitLabel(.continue)
 
 					DatePicker("Birthday", selection: $viewModal.user.birthdate, displayedComponents: .date)
 
@@ -37,8 +60,15 @@ struct AccountView: View {
 				.toggleStyle(SwitchToggleStyle(tint: .brandPrimary))
 			}
 			.navigationTitle("Account")
+			.toolbar{
+				ToolbarItemGroup(placement: .keyboard) {
+					Button("Dismiss"){
+						focusedField = nil
+					}
+				}
+			}
 		}
-		.onAppear{
+		.onAppear {
 			viewModal.retriveUser()
 		}
 		.alert(item: $viewModal.alertItem) { aletItem in
