@@ -45,7 +45,7 @@ final class ScannerVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate 
 	override func viewDidLayoutSubviews() {
 		super.viewDidLayoutSubviews()
 		
-		guard let previewLayer = previewLayer else {
+		guard let previewLayer else {
 			scannerDelegate?.didSurface(error: .invalidDeviceInput)
 			return
 		}
