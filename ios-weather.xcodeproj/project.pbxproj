@@ -206,6 +206,14 @@
 			path = BarcodeView;
 			sourceTree = "<group>";
 		};
+		646C139D2C64E2C200ED068B /* Extenstion */ = {
+			isa = PBXGroup;
+			children = (
+				64AD85E72C5A76A600BA0629 /* String+Ext.swift */,
+			);
+			path = Extenstion;
+			sourceTree = "<group>";
+		};
 		646C62692C455679009A0D3B = {
 			isa = PBXGroup;
 			children = (
@@ -302,7 +310,6 @@
 			children = (
 				64ED5A412C511C920036AC19 /* AccountView.swift */,
 				64AD85E52C5A752700BA0629 /* AccountViewModal.swift */,
-				64AD85E72C5A76A600BA0629 /* String+Ext.swift */,
 			);
 			path = AccountView;
 			sourceTree = "<group>";
@@ -374,6 +381,7 @@
 		64ED5A3E2C511C3E0036AC19 /* Appetizer */ = {
 			isa = PBXGroup;
 			children = (
+				646C139D2C64E2C200ED068B /* Extenstion */,
 				64AD85DE2C590DD000BA0629 /* Modals */,
 				64AD85D62C590D1800BA0629 /* Screens */,
 				64AD85E02C590DF500BA0629 /* Views */,
