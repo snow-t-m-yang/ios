@@ -8,17 +8,14 @@
 import SwiftUI
 
 struct FrameworkDetailView: View {
-	var framework: Framework
-
-//	@Binding var isShowingDetailView: Bool
-	@State private var isShowingSafariView = false
+	@ObservedObject var viewModal: FrameworkDetailViewModal
 
 	var body: some View {
 		VStack {
 			Spacer()
 
-			FrameworkTitleView(framework: framework)
-			Text(framework.description)
+			FrameworkTitleView(framework: viewModal.framework)
+			Text(viewModal.framework.description)
 				.font(.body)
 				.fontDesign(.monospaced)
 				.fontWeight(.bold)
@@ -26,36 +23,46 @@ struct FrameworkDetailView: View {
 
 			Spacer()
 
-			Button {
-				isShowingSafariView = true
-			} label: {
+//			Link(destination: URL(string: viewModal.framework.urlString) ?? URL(string: "www.apple.com")!) {
 //				AFButton(title: "Learn More")
+//			}
+
+			Button {
+				viewModal.isShowingSafariView = true
+			} label: {
+				//				AFButton(title: "Learn More")
 				Label("Learn More", systemImage: "book.fill")
 			}
 			.buttonStyle(.borderedProminent)
 			.cornerRadius(30)
-			.fullScreenCover(isPresented: $isShowingSafariView, content: {
-				SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
+			.fullScreenCover(isPresented: $viewModal.isShowingSafariView, content: {
+				SafariView(url: URL(string: viewModal.framework.urlString) ?? URL(string: "www.apple.com")!)
 			})
 
-//			HStack {
-//				Spacer()
-//
-//				Button {
-//					isShowingDetailView = false
-//				} label: {
-//					Image(systemName: "xmark")
-//						.foregroundColor(Color(.label))
-//						.imageScale(.large)
-//						.frame(width: 44, height: 44, alignment: .center)
-//				}
-//			}
-//			.padding(.horizontal)
+			Spacer()
+
+			Button {
+				viewModal.isShowingDetailView.wrappedValue = false
+			} label: {
+				Image(systemName: "xmark")
+					.foregroundColor(Color(.label))
+					.imageScale(.large)
+					.frame(width: 44, height: 44, alignment: .center)
+			}
+
+			.padding(.horizontal)
 		}
 	}
 }
 
-// you have to build the preview by youself, em...
+// you have to build the preview by yourself, em...
 #Preview {
-	FrameworkDetailView(framework: MockData.sampleFramework)
+	FrameworkDetailView(
+		viewModal: FrameworkDetailViewModal(
+			framework: MockData.sampleFramework,
+			isShowingDetailView: .constant(
+				false
+			)
+		)
+	)
 }

@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-@MainActor final class AppetizerListViewModal: ObservableObject {
-	@Published var appetizers: [Appetizer] = []
-	@Published var appAlertItem: APPAlertItem?
-	@Published var isLoading = false
-	@Published var isShowingDetail = false
-	@Published var selectedAppetizer: Appetizer?
+@Observable final class AppetizerListViewModal: ObservableObject {
+	var appetizers: [Appetizer] = []
+	var appAlertItem: APPAlertItem?
+	var isLoading = false
+	var isShowingDetail = false
+	var selectedAppetizer: Appetizer?
 
 //	func getAppetizers() {
 //		isLoading = true

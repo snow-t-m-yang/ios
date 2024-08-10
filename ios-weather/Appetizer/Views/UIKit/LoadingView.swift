@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ActivityIndicatior: UIViewRepresentable {
-	
 	func makeUIView(context: Context) -> UIActivityIndicatorView {
 		let activityIndicatorView = UIActivityIndicatorView(style: .large)
 		activityIndicatorView.color = UIColor.brandPrimary
@@ -16,21 +15,24 @@ struct ActivityIndicatior: UIViewRepresentable {
 		return activityIndicatorView
 	}
 	
-	func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {
-		
-	}
-	
-	
+	func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {}
 }
 
 struct LoadingView: View {
 	var body: some View {
 		ZStack {
 			Color(.systemBackground)
-			// fill the entire screen
+				// fill the entire screen
 				.ignoresSafeArea(.all)
 			
-			ActivityIndicatior()
+//			ActivityIndicatior()
+			ProgressView()
+				.progressViewStyle(
+					CircularProgressViewStyle(
+						tint: .brandPrimary
+					)
+				)
+				.scaleEffect(2)
 		}
 	}
 }

@@ -20,19 +20,24 @@ struct AccountView: View {
 		NavigationView {
 			Form {
 				Section(header: Text("Personal Info")) {
-					TextField("First Name", text: $viewModal.user.firstName)
-						.focused($focusedField, equals: .firstName)
-						.onSubmit {
-							focusedField = .lastName
-						}
-						.submitLabel(.next)
-					
-					TextField("Last Name", text: $viewModal.user.lastName)
-						.focused($focusedField, equals: .lastName)
-						.onSubmit {
-							focusedField = .email
-						}
-						.submitLabel(.next)
+					TextField(
+						"First Name", text: $viewModal.user.firstName
+					)
+					.focused($focusedField, equals: .firstName)
+					.onSubmit {
+						focusedField = .lastName
+					}
+					.submitLabel(.next)
+
+					TextField(
+						"Last Name",
+						text: $viewModal.user.lastName
+					)
+					.focused($focusedField, equals: .lastName)
+					.onSubmit {
+						focusedField = .email
+					}
+					.submitLabel(.next)
 
 					TextField("Email", text: $viewModal.user.email)
 						.focused($focusedField, equals: .email)
@@ -44,7 +49,18 @@ struct AccountView: View {
 						}
 						.submitLabel(.continue)
 
-					DatePicker("Birthday", selection: $viewModal.user.birthdate, displayedComponents: .date)
+//					DatePicker(
+//						"Birthday",
+//						selection: $viewModal.user.birthdate,
+//						displayedComponents: .date
+//					)
+
+					DatePicker(
+						"Birthday",
+						selection: $viewModal.user.birthdate,
+						in: Date().oneHundredTenYearAgo ... Date().eighteenYearAgo,
+						displayedComponents: .date
+					)
 
 					Button {
 						viewModal.saveChanges()
@@ -60,9 +76,9 @@ struct AccountView: View {
 				.toggleStyle(SwitchToggleStyle(tint: .brandPrimary))
 			}
 			.navigationTitle("Account")
-			.toolbar{
+			.toolbar {
 				ToolbarItemGroup(placement: .keyboard) {
-					Button("Dismiss"){
+					Button("Dismiss") {
 						focusedField = nil
 					}
 				}

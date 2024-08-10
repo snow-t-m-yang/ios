@@ -15,7 +15,7 @@ struct BarcodeView: View {
 		NavigationView {
 			VStack {
 				ScannerView(scannedCode: $viewModal.scannedCode, alertItem: $viewModal.alertItem)
-					.frame(maxWidth: .infinity, maxHeight: 300)
+					.frame(maxHeight: 300)
 
 				Label("Scanned Barcode:", systemImage: "barcode.viewfinder")
 					.font(/*@START_MENU_TOKEN@*/ .title/*@END_MENU_TOKEN@*/)

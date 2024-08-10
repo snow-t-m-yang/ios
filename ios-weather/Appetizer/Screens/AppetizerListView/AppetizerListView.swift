@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AppetizerListView: View {
-	@StateObject var viewModal = AppetizerListViewModal()
+	@State var viewModal = AppetizerListViewModal()
 
 	var body: some View {
 		ZStack {
@@ -73,11 +73,14 @@ struct AppetizerListCell: View {
 					.cornerRadius(9)
 
 			} placeholder: {
-				Image("food-placeholder")
-					.resizable()
-					.aspectRatio(contentMode: .fit)
+				ProgressView()
+					.progressViewStyle(CircularProgressViewStyle(tint: .brandPrimary))
 					.frame(width: 120, height: 90)
-					.cornerRadius(9)
+//				Image("food-placeholder")
+//					.resizable()
+//					.aspectRatio(contentMode: .fit)
+//					.frame(width: 120, height: 90)
+//					.cornerRadius(9)
 			}
 
 			VStack(alignment: .leading, spacing: 5) {

@@ -21,22 +21,26 @@ struct FrameworkGridView: View {
 					ForEach(MockData.frameworks) { framework in
 						NavigationLink(value: framework) {
 							FrameworkTitleView(framework: framework)
+								.onTapGesture {
+									viewModel.selectedFramework = framework
+								}
 						}
-
-						// Old code when using NavigationView
-//							.onTapGesture {
-//								viewModel.selectedFramework = framework
-//							}
 					}
 				}
 			}
 			.navigationTitle("Frameworks")
-			.navigationDestination(for: Framework.self) { framework in
-				FrameworkDetailView(framework: framework)
-			}
-//			.sheet(isPresented: $viewModel.isShowingDetailView) {
-//				FrameworkDetailView(framework: viewModel.selectedFramework!, isShowingDetailView: $viewModel.isShowingDetailView).presentationBackground(.thinMaterial)
+//			.navigationDestination(for: Framework.self) { framework in
+//				FrameworkDetailView(viewModal: FrameworkDetailViewModal(framework: viewModel.selectedFramework!, isShowingDetailView: viewModel.$isShowingDetailView))
 //			}
+			.sheet(isPresented: $viewModel.isShowingDetailView) {
+				FrameworkDetailView(
+					viewModal: FrameworkDetailViewModal(
+						framework: viewModel.selectedFramework!,
+						isShowingDetailView: $viewModel.isShowingDetailView
+					)
+				)
+				.presentationBackground(.thinMaterial)
+			}
 		}
 	}
 }

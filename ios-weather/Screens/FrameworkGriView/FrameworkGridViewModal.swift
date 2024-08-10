@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-// first tast of MVVM!
+// first test of MVVM!
 final class FrameworkGridViewModal: ObservableObject {
-//	var selectedFramework: Framework? {
-//		didSet {
-//			isShowingDetailView = true
-//		}
-//	}
+	var selectedFramework: Framework? {
+		didSet {
+			isShowingDetailView = true
+		}
+	}
 
-//	@Published var isShowingDetailView = false
+	@Published var isShowingDetailView = false
 }
